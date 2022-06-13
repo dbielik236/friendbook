@@ -1,3 +1,5 @@
+<% if user_signed_in?%>
+
 <h1>My Friends</h1>
 <br/>
 <div class="table-responsive-sm">
@@ -27,3 +29,10 @@
 </div>
 
 <%= link_to 'Add friend', new_friend_path, class:"btn btn-secondary"%>
+
+<% else %>
+
+<h1>FriendBook</h1>
+<p> Click the links above to start adding friends!</p>
+
+<% end %>
