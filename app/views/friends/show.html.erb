@@ -4,7 +4,7 @@
   <p><%= @friend.phone %> | <%= @friend.email %></p>
 
   <div>
-    <%= link_to "Edit", edit_friend_path(@friend), class:"btn btn-info" %> |
+    <%= link_to "Edit", edit_friend_path(@friend), class:"btn btn-info" %>  | 
     <%= link_to "Back to My Friends", friends_path, class:"btn btn-dark" %>
     <br/><br/><br/>
     <%= button_to "Delete Friend", @friend, method: :delete, class:"btn btn-danger" %>

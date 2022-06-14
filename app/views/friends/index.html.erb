@@ -14,7 +14,7 @@
     </thead>
   
     <tbody class="table-group-divider" >
-      <% @friends.each do |friend| %>
+      <% current_user.friends.each do |friend| %>
         <tr>
           <td><%= friend.first_name %></td>
           <td><%= friend.last_name %></td>
